@@ -1,6 +1,6 @@
 # Auteurs
+EL FATIHI YOUSSEF
 BOUHAJA MOHAMMED
-HAJJI-LOUMARI MARWA
 ELKHADER MOHAMED REDA
 CHELLAF MOHAMED DYAE
 
@@ -33,4 +33,5 @@ Pour démarrer avec notre application, suivez ces étapes :
 - `sql/` : Scripts SQL pour la création, la manipulation et la suppression de bases de données.
 
 Nous espérons que cette application répondra à vos besoins en matière de covoiturage et vous aidera dans votre projet de système de base de données. Pour toute question ou suggestion, n'hésitez pas à nous contacter.
+# SiteDeCovoiturageCampus
 # SiteDeCovoiturageCampus
