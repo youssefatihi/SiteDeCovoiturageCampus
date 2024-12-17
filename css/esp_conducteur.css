@@ -1,0 +1,111 @@
+/* Styles généraux */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* Augmentation de la taille de la police générale */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles de la barre latérale */
+.sidebar {
+    width: 20%; /* Utilisation d'un pourcentage pour une taille relative */
+    min-width: 250px; /* Largeur minimale pour assurer la lisibilité */
+    background-color: #333;
+    color: #fff;
+    transition: width 0.5s ease;
+}
+
+.sidebar:hover {
+    width: 25%; /* Augmentation de la largeur au survol */
+}
+
+.sidebar h2 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px; /* Augmentation de la taille de la police pour les titres */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px 0; /* Plus d'espace entre les éléments de liste */
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.sidebar a:hover {
+    color: #4CAF50;
+}
+
+.main-content {
+    flex-grow: 1; /* Permet au contenu principal de prendre l'espace restant */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.main-content:hover {
+    transform: scale(1.02);
+}
+
+/* Styles des boutons */
+.form-group input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Styles pour les boutons de suppression */
+.form-group input[type="submit"].delete-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input[type="submit"].delete-button:hover {
+    background-color: #e60000;
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-top: 0;
+    }
+}
